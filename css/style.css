@@ -1,0 +1,819 @@
+@charset "utf-8";
+
+body {
+  font-family: sans-serif;
+  background-color: #fbe6e6;
+}
+.upper {
+  text-transform: uppercase;
+}
+.bold{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 40px;
+}
+
+.header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  color: #751b51;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  transition: background-color .6s;
+}
+
+:target {
+  scroll-margin-top: 87px;
+}
+
+.header.active {
+  backdrop-filter: blur(5px);
+  background-color: rgba(250, 187, 203, 0.8);
+}
+
+.header h1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 0;
+  color: #751b51;
+  font-size: 1.2rem;
+  letter-spacing: 0.35em;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header nav ul li a {
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: clamp(7em, 8vw, 15em);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: clamp(0.1em, 8vw, 0.2em);
+  font-weight: 900;
+  color: #8d657d;
+
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  60% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.title.show span {
+  animation: bounceIn 0.8s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ファーストビュー slick */
+.slider {
+  margin-top: 87px;
+}
+
+.slider a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 70vh;
+}
+
+.slider a.img01 {
+  background-image: url(../img/works-thumb1.jpg);
+}
+
+.slider a.img02 {
+  background-image: url(../img/works-thumb2.jpg);
+}
+
+.slider a.img03 {
+  background-image: url(../img/works-thumb3.jpg);
+}
+.slider a.img04 {
+  background-image: url(../img/works-thumb9.jpg);
+}
+
+.slider .slick-dots {
+  bottom: 5%;
+  z-index: 1;
+}
+
+.slider .slick-dots li button:before {
+  font-size: 70px;
+}
+
+.slick-slide {
+  filter: brightness(70%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.slick-active {
+  filter: brightness(100%);
+}
+
+
+.slick-slider {
+  line-height: 0;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+  color: #751b51;
+}
+
+.wrap h3 {
+  max-width: 1280px;
+  margin-bottom: 32px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d2afc5;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  letter-spacing: 0.1em;
+}
+
+.wrap img {
+  aspect-ratio: 4 / 3;
+}
+
+.works-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.works ul li {
+  margin: 0 auto 20px;
+  height: 100%;
+}
+
+.works-item {
+  display: flex;
+  flex-direction: column;
+  color: #461030;
+  height: 100%;
+  max-width: 400px;
+}
+
+.works-info {
+  text-wrap: wrap;
+}
+
+.works-name,
+.works-img {
+  margin-bottom: 5px;
+}
+
+.works-name {
+  font-size: 1.4rem;
+}
+
+/* プロフィール */
+.profile-bc {
+  background: #fff6f6;
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+  padding: 80px 0 90px;
+}
+
+.profile-img {
+  width: 40%;
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+.box {
+  max-width: 600px;
+  width: 60%;
+}
+
+.profile .flex {
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.profile-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", "Kosugi Maru", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.profile-text {
+  font-size: 1.4rem;
+  font-family: "Roboto", "Kosugi Maru", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.07em;
+}
+
+.favorite {
+  margin-top: 24px;
+}
+
+.favorite span {
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d2afc5;
+  font-size: 2.4rem;
+  letter-spacing: .05em;
+  color: #751b51;
+}
+
+.profile-btn a {
+  display: block;
+  max-width: fit-content;
+  margin-top: 24px;
+  margin-left: auto;
+  padding: 6px 15px;
+  font-size: 1.6rem;
+  background-color: #751b51;
+  color: #fff;
+}
+
+/* スキル */
+.skill {
+  margin-top: 60px;
+}
+
+.skill .inner {
+  max-width: 1140px;
+  padding: 0 20px;
+}
+
+.skill ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.skill h3 {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #751b51;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.skill p {
+  padding: 0 14px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.license {
+  margin-bottom: 56px;
+}
+
+.license h3 {
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+
+.license p {
+  line-height: 2;
+}
+
+.license span {
+  font-weight: 900;
+}
+
+
+/* ページトップ */
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ffd7e7;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+}
+
+/* フッター */
+.footer {
+  padding: 10px 0;
+  background-color: #751b51;
+}
+
+.material-icons-outlined {
+  color: #751b51;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+/* とりあえずのhover */
+
+a {
+  transition-duration: 0.3s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .circle-wrap:hover .center-icon {
+    transform: translate(-50%, -50%) rotate(15deg) scale(1.05);
+  }
+}
+
+/*--------------------------------
+ 下層：Worksページ
+---------------------------------*/
+.content {
+  position: relative;
+}
+
+.article {
+  padding: 50px 0 0;
+  font-size: 1.4rem;
+}
+
+.article-inner {
+  max-width: 1040px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+
+.article-inner ul {
+  margin-bottom: 30px;
+}
+
+.article-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #751b51;
+}
+
+.article-img {
+  border: 1px solid #9c9c9c;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.article-img2 {
+  display: flex;
+  justify-content: center;
+}
+
+.article-img-bnr {
+  display: inline-block;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.article-body section {
+  padding-bottom: 25px;
+}
+
+.article-body .scope {
+  padding-bottom: 0;
+}
+
+.article-body p {
+  padding-bottom: 0;
+}
+
+.article-body section ul li section {
+  padding-bottom: 0;
+}
+
+.article-body section ul li section p {
+  padding-bottom: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.article-info-title {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.article-info-title::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 25px;
+  background-color: #751b51;
+  position: absolute;
+  top: 2px;
+  left: -5px;
+}
+.bnr-center{
+  max-width: fit-content;
+  margin: 0 auto 25px;
+}
+/* 作業範囲 */
+.ul_flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.ul_flex li {
+  padding-right: 10px;
+}
+
+h4 {
+  font-weight: 0;
+}
+
+/* ペルソナ　アコーディオンメニュー */
+section .accordion-content {
+  display: none;
+  background-color: #FFF;
+  padding: 12px 20px 10px;
+}
+
+.accordion-header {
+  background-color: #FFF;
+  padding: 12px 45px 10px 20px;
+  margin: 10px 0 0;
+  transition: background .3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-header::before,
+.accordion-header::after {
+  position: absolute;
+  content: '';
+  top: 1px;
+  right: 20px;
+  bottom: 0;
+  width: 12px;
+  height: 2px;
+  margin: auto;
+  background: #151E2F;
+}
+
+.accordion-header::after {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  transform: rotate(0deg);
+}
+
+
+.accordion-header span,
+.accordion-content span {
+  padding-left: 25px;
+  position: relative;
+}
+
+.accordion-header span::before {
+  position: absolute;
+  content: "Q";
+  top: 2px;
+  left: 0;
+  color: #151E2F;
+  font-size: 17px;
+}
+
+.accordion-content span::before {
+  position: absolute;
+  content: "A";
+  top: 3px;
+  left: 0;
+  color: #151E2F;
+  font-size: 17px;
+}
+
+.article-body p {
+  margin-bottom: 10px;
+}
+
+.works_all {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.works_all h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #751b51;
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+}
+.works_all h4{
+  margin-bottom: 5px;
+  color: #751b51;
+}
+.works_all div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.works_all div p img {
+  width: 300px;
+  border: 1px solid #e6e6e6;
+  aspect-ratio: 4 / 3;
+}
+
+/* バナー */
+.bnr_flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.bnr_flex li {
+  border: 1px solid #e6e6e6;
+}
+
+.bnr_design section {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.bnr_design section p {
+  padding-top: 10px;
+}
+
+/* イラスト実績 */
+.illust_flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.illust_flex li {
+  padding: 10px;
+}
+
+.manga {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+
+
+/* Webサイトリンク */
+.circle-wrap {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 120px;
+  height: 120px;
+  z-index: 999;
+}
+
+.center-icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  z-index: 2;
+}
+
+.circle-text {
+  width: 120px;
+  height: 120px;
+  animation: rotateText 10s linear infinite;
+  transform-origin: center center;
+  z-index: 1;
+}
+
+text-path {
+  color: #751b51;
+}
+
+.center-icon {
+  transition: transform 0.3s ease;
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dessin .flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.dessin li{
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+/*--------------------------------
+ レスポンシブ
+---------------------------------*/
+
+@media screen and (max-width: 1279px) {
+  .slider a {
+    height: 60vh;
+    background-position: center left;
+  }
+}
+
+.slider {
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  :target {
+    scroll-margin-top: 60px;
+  }
+
+  .header h1 a {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .header nav ul {
+    padding-right: 10px;
+  }
+
+  .header nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  .slider {
+    margin-top: 70px;
+  }
+
+  .slider a {
+    height: 40vh;
+    background-position: center left;
+  }
+
+  .slider a.img02,
+  .slider a.img3,
+  .slider a.img04 {
+    background-position: center;
+  }
+
+  .profile .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .profile-img {
+    width: 70%;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider a {
+    height: 60vh;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .wrap h3 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+  }
+
+  .works-flex {
+    margin-bottom: 30px;
+  }
+
+  .profile-bc {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    clip-path: polygon(0 0, 100% 3%, 100% 97%, 0% 100%);
+  }
+
+  .profile-title {
+    margin-bottom: 16px;
+  }
+
+  .profile-text {
+    font-size: 1.2rem;
+  }
+
+  .skill {
+    margin-top: 50px;
+  }
+
+  .skill h3 {
+    padding: 5px;
+    font-size: 1.4rem;
+  }
+
+  .skill p {
+    font-size: 1.2rem;
+  }
+
+  .circle-wrap{
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .center-icon{
+    width: 38px;
+    height: 38px;
+  }
+  .circle-text{
+    width: 75px;
+    height: 75px;
+  }
+  text{
+    letter-spacing: 0.08em;
+  }
+}
