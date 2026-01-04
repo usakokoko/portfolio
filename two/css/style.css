@@ -1,0 +1,1568 @@
+@charset "utf-8";
+body{
+  font-family: "游明朝", "Noto Serif JP", serif;
+}
+section,article{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h2{
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+/* ヘッダーここから */
+.wrapper{
+  background-color: #702c69;
+}
+.he_fixed{
+  background-color: #702c69;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
+header .topmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header h1 a{
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 2;
+  color: #fff;
+}
+header h1 a img{
+  padding: 5px 5px 8px;
+}
+header nav ul{
+  display: flex;
+}
+header .global_1{
+  background-color: #811375;
+}
+header nav ul li a{
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  padding: 7px 10px;
+}
+header .global_1 ul li{
+  padding: 5px 0;
+}
+header .global_1 ul li:last-child{
+  display: none;
+}
+header .global_1 ul li a{
+  border-right: 1px solid #fff9e3;
+  color: #fff;
+}
+header .global_1 ul li:nth-child(4) a,
+header .global_1 ul li:last-child a{
+  border-right: none;
+}
+header .global_2 ul {
+  justify-content: center;
+  background-image: url(../images/header_bgi.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+header .global_2 ul li a .on{
+  color: #cdc3c3;
+}
+header .sidebtn {
+  width: 100px;
+}
+header .sidebtn p{
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 3;
+}
+header .sidebtn .btn2{
+  top: 200px;
+}
+header .sidebtn a{
+  display: block;
+  width: 50px;
+  height: 100px;
+  padding: 10px;
+  border-bottom: 1px solid #5f861e;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3);
+  writing-mode: vertical-rl;
+  font-family: "Noto Sans JP";
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  background-color: #d4eeab;
+  color: #2d420b;
+}
+header .sidebtn .btn1 a{
+  padding-top: 15px;
+}
+header .sidebtn .btn2 a{
+  width: 50px;
+  height: 150px;
+  border-bottom: none;
+}
+/* bxslider */
+.bx-wrapper {
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+  z-index: 0;
+}
+
+.mainslider div img{
+  margin-top: 85px;
+  height: 600px;
+  object-fit: cover;
+}
+/* 空室検索 */
+form{
+  text-align: center;
+  padding: 10px;
+  background-image: url(../images/header_bgi.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+form div{
+  display: flex;
+  justify-content: center;
+}
+form input{
+  max-width: 100px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #a0a0a0;
+  color: #000;
+  font-family: inherit;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+select{
+  padding: 5px;
+  border: 1px solid #a0a0a0;
+  border-right: none;
+  text-align: center;
+  color: #000;
+  font-family: inherit;
+  font-size: 1.8rem;
+  background-color: #fff;
+}
+form input[type="date"]{
+  max-width: 160px;
+  width: 100%;
+  border-right: none;
+  background-color: #fff;
+}
+form input, select {
+  -webkit-appearance: none;
+  appearance: none;
+	border-radius: 0;
+}
+input[type="button"]{
+  background-color: #e0d7d7;
+}
+/* ヘッダーここまで */
+
+/* トップページmain */
+
+/* ベストレート保証 */
+main .bestrate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding: 15px;
+  max-width: 680px;
+  width: 90%;
+  height: 90px;
+  background: linear-gradient(140deg, #b39855 0%, #fff9e6 50%, #b39855 100%);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+main .bestrate h2{
+  color: #461007;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+main .bestrate p{
+  font-size: 1.8rem;
+  border-bottom: 1px solid #64180a;
+}
+main .bestrate p a{
+  color: #461007;
+}
+/* お知らせ */
+main .news{
+  margin-top: 70px;
+}
+main .news h2{
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.newsslider li{
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  position: relative;
+}
+.bx-wrapper .bx-next {
+  right: 1%;
+}
+.bx-wrapper .bx-prev {
+  left: 1%;
+}
+.newsslider  li p {
+  font-family: "Noto Sans JP";
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 5px 15px;
+}
+.newsslider  li p img{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.newsslider  li .allread{
+  position: absolute;
+  right: 13%;
+  bottom: 5%;
+  max-width: 80px;
+  padding: 2px 5px;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #d4eeab;
+}
+.news_btn{
+  display: flex;
+  justify-content: space-evenly;
+}
+.news_btn p{
+  max-width: 150px;
+  width: 100%;
+  padding: 40px 10px;
+}
+.news_btn p a{
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP";
+  background-color: #702c69;
+}
+
+/* トップページconcept */
+main .concept{
+  margin-top: 50px;
+  height: 350px;
+  background-image: url(../images/concept.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+main .concept p{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 120px 15px;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* トップページ客室・温泉 */
+.main_page{
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  padding: 0 400px 0 20px;
+  position: relative;
+}
+.main_page h2{
+  letter-spacing: 5px;
+}
+.main_page p{
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+.main_ti p{
+  max-width: 600px;
+}
+.main_tx a{
+  display: block;
+  max-width: 600px;
+  width: 90%;
+  margin: 50px 0;
+  padding: 70px 100px 70px 30px;
+  border: 1px solid #a0a0a0;
+  transition-duration: 0.5s;
+}
+.posi{
+  position: absolute;
+  right: 2%;
+  text-align: end;
+  pointer-events: none;
+}
+.posi img{
+  width: 53%;
+}
+
+.main_tx .detail2{
+  text-align: start;
+}
+
+/* トップページお料理 */
+.bgi1{
+  padding-bottom: 100px;
+  background-image: url(../images/bgi1.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.cuisine{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  max-width: none;
+  width: 100%;
+}
+.cuisine_ti{
+  padding: 120px;
+  background-image: url(../images/cuisine.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.cuisine_ti h2{
+  letter-spacing: 5px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 20px #000;
+}
+.cuisine_ti p{
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: #fff;
+  text-shadow: 0 0 20px #000;
+}
+.cuisine_sub{
+  width: 100%;
+}
+.cuisine_sub p{
+  text-align: center;
+}
+.cuisine_sub a{
+  display: block;
+  padding: 54px 100px;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  color: #160640;
+  background-color: rgba(15, 4, 140, 0.4);
+}
+.cuisine_sub a.bor_no{
+  border-bottom: none;
+}
+.bgi1 article{
+  padding-top: 400px;
+}
+/* トップページおすすめプラン */
+.plan_flex{
+  display: flex;
+  margin-bottom: 130px;
+}
+article .plan{
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+article .plan a{
+  display: block;
+  padding: 10px 20px;
+  background-color: #d4eeab;
+  transition-duration: 0.5s;
+}
+article .plan h3{
+  letter-spacing: 2px;
+}
+article .plan p{
+  padding: 0 10px 10px;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+/* トップページ館内施設 */
+.facility{
+  display: flex;
+  margin: 0 auto;
+  max-width: none;
+  height: 400px;
+}
+.faci_sec{
+  max-width: none;
+  margin: 0;
+}
+.faci_sec a{
+  display: block;
+  height: 400px;
+  padding: 50px 100px;
+  background-color: rgba(140, 4, 81, 0.3);
+  border-radius: 0 250px 0  0;
+}
+.faci_sec a p{
+  padding-top: 60px;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+.faci_sec a p span{
+  max-width: 150px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.faci_img{
+  max-width: 700px;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/facility.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+/* 周辺観光・スポット・イベント */
+.event{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 150px auto;
+  padding: 0 15px;
+}
+.event section{
+  max-width: 250px;
+  width: 100%;
+  padding: 10px;
+  background-color: #d4eeab;
+  transition-duration: 0.5s;
+}
+.event section a{
+  display: block;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+.event section a h3{
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  background-color: #fff;
+}
+.event section a p{
+  padding: 5px;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+/* インスタグラム */
+.insta_sec{
+  max-width: 1600px;
+  margin: 0 auto 150px;
+  text-align: center;
+}
+.insta_sec h2{
+  margin-bottom: 10px;
+}
+.insta_sec p{
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+/* バナー */
+.bnr{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 20px;
+}
+.bnr p{
+  transition-duration: 0.5s;
+}
+/* アクセス */
+.access{
+  margin-top: 100px;
+  }
+.access h2{
+  padding: 0;
+}
+.access .toby{
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+.map_flex{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.access_map{
+  padding: 0 30px;
+  font-size: 1.6rem;
+  order: 1;
+}
+.access_map h3{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.access_map p{
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+.access_map address{
+  display: block;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.access_map address span{
+  margin-bottom: 0;
+  border-bottom: none;
+}
+iframe{
+  width: 55%;
+  padding: 0 20px;
+  order: 0;
+}
+.access section h3{
+  font-size: 1.8rem;
+}
+.access .access_sec{
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.access .access_sec img{
+  padding: 0 3px 2px 0;
+}
+.access .access_flex{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+}
+.access .access_flex .bor{
+  max-width: 120px;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.access span{
+  display: block;
+  max-width: 168px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border-bottom: 1px solid #000;
+}
+.access .access_flex2 .bor2{
+  max-width: 80px;
+}
+.access .access_flex2 span{
+  max-width: 100px;
+}
+.access .access_flex2 .ddd{
+  max-width: 170px;
+}
+.access .access_btn{
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 80px;
+  margin-bottom: 150px;
+  text-align: end;
+}
+.access_btn a{ 
+  padding: 10px 40px;
+  font-family: "Noto Sans JP";
+  background-color: #d4eeab;
+  font-size: 1.6rem;
+}
+/* フッターここから */
+footer .footer1{
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-align: center;
+}
+.footer_btn ul{
+  display: flex;
+  justify-content: center;
+}
+.footer_btn ul li{
+  max-width: 200px;
+  width: 90%;
+  padding: 10px;
+}
+.footer_btn ul li a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #811375;
+}
+.pagetop{
+  padding-right: 55px;
+  padding-bottom: 10px;
+  text-align: end;
+}
+.pagetop img{
+  border-radius: 70px;
+}
+.footer_bgc{
+  background-color: #702c69;
+  color: #fff;
+}
+.footer_flex{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer_address{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.footer_address h2{
+  order: 1;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.footer_address h2 a{
+  color: #fff;
+}
+.footer_address .p_img{
+  order: 0;
+  display: block;
+  padding: 10px 0;
+}
+.footer_address address{
+  order: 2;
+}
+.local{
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+.local ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+}
+.local ul li a{
+  display: block;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.snsicon{
+  display: flex;
+  justify-content: center;
+  background-color: #432c70;
+}
+.snsicon p{
+  padding: 10px 20px;
+}
+footer hr{
+  border: none;
+  margin: 0;
+}
+footer small{
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+/* トップページここまで */
+
+/* 客室ページここから */
+.roomimg{
+  margin-top: 85px;
+  height: 500px;
+  background-image: url(../images/topp_room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.roomimg p{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+}
+.roomimg p span{
+  font-size: 3.6rem;
+}
+.roomimg p span::after{
+  content: "\A";
+  white-space: pre;
+}
+.rooms h2, .onsen h2{
+  text-align: center;
+  padding: 30px 0 10px;
+  letter-spacing: 2px;
+}
+.rooms .room_text, .onsen .onsen_text{
+  max-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.wrapper2{
+  background-image: url(../images/bgi2.jpg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: repeat-y;
+  padding: 100px 0 150px;
+}
+main .wrapper2 .rooms{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+main .wrapper2 .rooms div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4px;
+  position: relative;
+}
+main .wrapper2 .rooms div p a{
+  display: block;
+  position: relative;
+}
+main .wrapper2 .rooms div p a span{
+  display: block;
+  padding: 0 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(18, 10, 111, 0.3);
+  font-size: 2.4rem;
+}
+main .wrapper2 .rooms2{
+  padding-top: 100px;
+}
+main .wrapper2 .rooms2 div{
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 3px;
+grid-row-gap: 3px;
+}
+.a1 { grid-area: 1 / 1 / 2 / 4; }
+.a2 { grid-area: 1 / 4 / 2 / 7; }
+.a3 { grid-area: 2 / 1 / 3 / 3; }
+.a4 { grid-area: 2 / 3 / 3 / 5; }
+.a5 { grid-area: 2 / 5 / 3 / 7; }
+
+.art_room{
+  padding-bottom: 100px;
+}
+article h2{
+  padding: 100px 0 50px;
+  text-align: center;
+}
+.sec_roomlist{
+  padding: 0 10px;
+}
+.room_list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+section h3{
+  padding: 10px 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.room_list p{
+  padding-right: 20px;
+  font-size: 1.6rem;
+  transition-duration: 0.5s;
+}
+.room_list p a{
+  display: block;
+  position: relative;
+}
+.room_list p a span{
+  display: block;
+  padding: 0 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(18, 10, 111, 0.3);
+  font-size: 1.8rem;
+}
+
+/* 客室ページここまで */
+
+/* 温泉ページここから */
+.onsenimg{
+  margin-top: 85px;
+  height: 500px;
+  background-image: url(../images/onsen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.onsenimg p{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1.5);
+}
+.onsenimg p span{
+  font-size: 3.6rem;
+}
+.onsenimg p span::after{
+  content: "\A";
+  white-space: pre;
+}
+main .onsen{
+  margin: 10px auto;
+}
+main .onsen p{
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+.onsen .onsen_text2{
+  padding-top: 20px;
+}
+.daiyokujoh{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+figure{
+  position: relative;
+  transition-duration: 0.5s;
+}
+figure figcaption{
+  position: absolute;
+  top: 0;
+  right: center;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: rgba(18, 10, 111, 0.6);
+}
+
+.chartered{
+  display: flex;
+  justify-content: center;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.chartered div{
+  padding-top: 10px;
+}
+.chartered div p{
+  max-width: 600px;
+  padding: 0 50px 0 20px;
+}
+.chartered div .chartered_p{
+  padding-bottom: 40px;
+  line-height: 1.7;
+}
+.chartered div p em{
+  line-height: 2;
+  font-weight: bold;
+}
+.wrapper3{
+  padding-bottom: 40px;
+  background-image: url(../images/bgi3.jpg);
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-position: cover;
+}
+.wrapper3 .onsen p{
+  text-align: center;
+}
+.wrapper3 h3{
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #fff;
+  font-weight: normal;
+  font-family: "Noto Sans JP";
+  font-size: 1.6rem;
+}
+.wrapper3 .model{
+  max-width: 120px;
+  margin-left: 35px;
+  padding: 5px;
+}
+.model_flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+.model_flex p{
+  font-family: "Noto Sans JP";
+}
+.modelp p{
+  font-size: 1.6rem;
+}
+.modelp .plan_name{
+  padding: 15px;
+}
+.modelp{
+  width: 30%;
+  padding: 10px;
+  order: 1;
+  position: relative;
+}
+.modelp_2{
+  order: 0;
+}
+.model_abso{
+  position: absolute;
+  left: 18%;
+  bottom: 15%;
+}
+.modelp span{
+  display: block;
+  margin-left: 20px;
+  height: 40px;
+  border-left: 2px solid #000;
+}
+.modelp .hei_60{
+  height: 60px;
+}
+article .onsen_wrap{
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+article .course{
+  max-width: 100px;
+  padding: 5px;
+}
+article .onsen_p {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 90%;
+  margin: 40px auto;
+  border: 1px solid #a0a0a0;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.onsen_pimg {
+  order: 0;
+}
+.onsen_p div{
+  width: 70%;
+  padding: 20px;
+  order: 1;
+}
+.onsen_p div h4{
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.onsen_p div p{
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+.detail{
+  padding-top: 60px;
+  text-align: end;
+}
+.detail a{
+  padding: 5px 10px;
+  /* font-family: "Noto Sans JP"; */
+  background-color: #d4eeab;
+  letter-spacing: 2px;
+}
+.onsen_re{
+  padding: 10px;
+  text-align: end;
+}
+.onsen_re a{
+  padding:  10px 20px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #23107c;
+}
+.onsen_q{
+  padding-top: 60px;
+}
+.onsen .quality{
+  max-width: 700px;
+  margin: 10px auto 100px;
+  padding: 50px 50px 60px;
+  background-color: #c7bfeb;
+}
+.onsen table{
+  border-bottom: 1px solid #8985a3;
+}
+.onsen table tr{
+  border-bottom: 1px solid #8985a3;
+}
+.onsen table tr:nth-child(3),.onsen table tr:nth-child(4),.onsen table tr:nth-child(5){
+  border-bottom: none;
+}
+.onsen table th, .onsen table td{
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.onsen table th{
+  width: 25%;
+  padding-bottom: 5px;
+}
+.onsen table .pdb{
+  padding-bottom: 5px;
+}
+/* 温泉ページここまで */
+
+/* レスポンシブ！！！！！！！！！！！ */
+
+/* ホバー処理 */
+@media (hover: hover){
+  /* トップページ */
+  header h1 a:hover{
+    color: #000;
+  }
+  header .global_1 ul li a:hover{
+    color: #000;
+  }
+  header .global_2 ul li a:hover{
+    color: #cdc3c3;
+  }
+  header .sidebtn a:hover{
+    background-color: #b2c792;
+    color: #fff;
+  }
+  .news_btn p a:hover{
+    background-color: #c0a2bd;
+  }
+  .main_tx a:hover{
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  }
+  .cuisine_sub a:hover{
+  background-color: rgba(158, 151, 228, 0.4);
+  }
+  article .plan a:hover{
+  transform: scale(1.06);
+  }
+  .faci_sec a:hover{
+    background-color: rgba(140, 4, 81, 0.4);
+  }
+  .event section:hover{
+    transform: scale(1.06);
+  }
+  .bnr p:hover{
+    transform: scale(1.06);
+  }
+  .access_btn a:hover{
+    background-color: #b2c792;
+    color: #fff;
+  }
+  .footer_btn ul li a:hover{
+    background-color: #5f0e55;
+  }
+  .pagetop img:hover{
+    opacity: 0.8;
+  }
+  .footer_address h2 a:hover{
+    color: #cdc3c3;
+  }
+  .local ul li a:hover{
+    color: #cdc3c3;
+  }
+  /* 客室ページ */
+  .rooms div p a:hover{
+    opacity: 0.8;
+  }
+  .room_list p:hover{
+    opacity: 0.8;
+    transform: scale(1.06);
+  }
+  /* 温泉ページ */
+  figure:hover{
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+  .onsen_p .detail a:hover{
+    color: #fff;
+    background-color: #4c740b;
+  }
+  .onsen_re a:hover{
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width:1024px){
+  /* .main_tx a{
+    padding: 70px 90px 70px 40px;
+  } */
+}
+@media screen and (max-width:768px){
+/* ナビ1 */
+header .global_1 ul li{
+  display: none;
+}
+header .global_1 ul li:last-child{
+  display: inherit;
+  position: fixed;
+  top: 0;
+  right: 70px;
+  padding: 4px;
+  background-color: #811375;
+}
+  /* ハンバーガーメニュー */
+  .btn{
+    position: absolute;
+    position: fixed;
+    z-index: 6;
+    right: 20px;
+    top: 20px;
+  }
+  .btn span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 6px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+  .btn span:nth-child(1)::before{
+    content: "MENU";
+    position: absolute;
+    top: -15px;
+    right: 0.4px;
+    color: #fff;
+  }
+  .btn.on span:nth-child(1){
+    transform: rotate(45deg) translate(6.5px, 6.5px);
+    background-color: #fff;
+  }
+  
+  .btn.on span:nth-child(1)::before{
+    content: "CLOSE";
+    transform: rotate(-45deg) translate(6.5px, 6.5px);
+    top: -20px;
+    right: 21px;
+  }
+  .btn.on span:nth-child(2){
+    opacity: 0;
+  }
+  .btn.on span:nth-child(3){
+    transform: rotate(-45deg) translate(6px, -6px);
+    background-color: #fff;
+  }
+  header .global_2{
+    position: fixed;
+    z-index: 5;
+    left: auto;
+    right: -200%;
+    top: 48px;
+    height: 100vh;
+    transition: 0.4s;
+  }
+  header .global_2.on{
+    right: 0;
+  }
+  header .global_2 ul{
+    flex-wrap: wrap;
+    background-image: none;
+    background-color: rgba(18, 10, 111, 0.8);
+  }
+  header .global_2 ul li{
+    width: 100%;
+  }
+  header .global_2 ul li a{
+    color: #fff;
+    text-align: center;
+  }
+  /* メインスライダー */
+  .mainslider div img{
+    margin-top: 48px;
+  }
+   /* ベストレート */
+  main .bestrate{
+    max-width: 500px;
+  }
+   /* お知らせ */
+  main .news{
+  max-width: 530px;
+}
+  /* トップページ客室・温泉 */
+  .main_page{
+    padding-right:0;
+  }
+  .main_ti{
+    margin-bottom: 200px;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  .main_tx a{
+    margin-top: 90px;
+  }
+  .posi{
+    top: 13%;
+  }
+  .posi img{
+    width: 60%;
+  }
+  .detail{
+    padding-top: 20px;
+  }
+/* お料理 */
+  .cuisine_ti{
+    /* height: 300px; */
+    padding: 40px;
+  }
+  .cuisine_sub a{
+    padding: 37px 20px;
+  }
+  /* おすすめプラン */
+  .bgi1 article{
+    padding-top: 100px;
+  }
+  article .reco{
+    margin-top: 200px;
+    padding-bottom: 0;
+  }
+  .plan_flex{
+    flex-direction: column;
+  }
+  article .plan{
+    max-width: 500px;
+    padding: 15px;
+  }
+  /* 館内施設 */
+  .facility{
+    flex-direction: column;
+    height: 700px;
+  }
+  .faci_sec{
+    order: 0;
+  }
+  .faci_sec a{
+    height: 350px;
+    padding: 30px 70px 30px 50px;
+  }
+  .faci_sec a p{
+    padding-top: 40px;
+  }
+  .faci_img{
+    max-width: 768px;
+    order: 1;
+  }
+  
+/* アクセス */
+.map_flex{
+  flex-direction: column;
+}
+iframe{
+  width: 100%;
+}
+.access_map{
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+.access .access_sec{
+  padding: 0 50px;
+}
+/* フッター */
+.local{
+  width: 70%;
+}
+.local ul{
+  height: auto;
+}
+
+/* 客室 */
+.rooms .room_text{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.roomimg{
+  margin-top: 48px;
+  }
+main .wrapper2 .rooms div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* 温泉 */
+.onsenimg{
+margin-top: 48px;
+}
+.onsen .onsen_text{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .onsen p{
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.chartered{
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.chartered div{
+  margin: 0 auto;
+  order: 1;
+}
+.chartered div p{
+  padding-left:20px;
+  padding-right: 20px;
+}
+.chartered p{
+  order: 0;
+}
+.onsen table th{
+  text-align: center;
+  padding-top: 10px;
+}
+.onsen table th span{
+  writing-mode: vertical-rl;
+  white-space: pre;
+}
+}
+
+@media screen and (max-width:480px){
+  .mainslider div img{
+    height: 500px;
+  }
+  /* サイドボタン */
+  header .sidebtn{
+    display: none;
+  }
+  /* 空室検索 */
+  form input,select{
+    font-size: 1.6rem;
+  }
+  form input{
+   max-width: 100px;
+   letter-spacing: 0;
+  }
+  select{
+    max-width: 50px;
+  }
+  /* ベストレート */
+  main .bestrate{
+    margin-top: 50px;
+  }
+  main .bestrate h2{
+    font-size: 1.8rem;
+  }
+  main .bestrate p{
+    font-size: 1.4rem;
+  }
+  /* お知らせ */
+  main .news{
+    max-width: 250px;
+  }
+  .news_btn p a {
+    padding: 10px 4px;
+  }
+  .bx-wrapper .bx-next {
+    right: -14%;
+  }
+  .bx-wrapper .bx-prev {
+    left: -14%;
+  }
+  
+.access span{
+  width: 20%;
+}
+  /* メインページ客室・温泉 */
+.main_page{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+.posi{
+  position: static;
+  order: 0;
+}
+.posi img{
+  width: 100%;
+}
+.main_tx{
+  order: 1;
+}
+.main_ti{
+  margin-bottom: 0;
+}
+.main_tx a{
+  max-width: 600px;
+  margin: 3px auto 0;
+  width: 98%;
+  padding: 45px;
+  border: 1px solid #000;
+}
+
+/* お料理 */
+.cuisine{
+  flex-direction: column;
+}
+.cuisine_ti{
+  height: fit-content;
+}
+.cuisine_sub a{
+  padding: 20px;
+}
+  /* おすすめプラン */
+  .plan_flex{
+    margin-bottom: 50px;
+  }
+  .bgi1 article{
+    padding-top: 300px;
+  }
+  /* 館内施設 */
+  .faci_sec a p {
+    padding-top: 30px;
+}
+/* 周辺観光・スポット・イベント */
+.event{
+  gap: 15px;
+  margin: 50px auto;
+}
+.event section a{
+  padding: 10px;
+}
+.event section a p{
+  font-size: 1.4rem;
+}
+
+/* インスタグラム */
+.insta_sec{
+  margin-bottom: 20px;
+}
+/* バナー */
+.bnr{
+  margin-bottom: 0;
+}
+/* アクセス */
+.access{
+  margin-top: 50px;
+}
+.access .toby{
+  margin-bottom: 30px;
+}
+iframe{
+  height: 300px;
+}
+.access .access_sec {
+  padding: 0 10px;
+}
+.access .access_flex .bor{
+  writing-mode: vertical-lr;
+  width: 10%;
+  padding-right: 30px;
+}
+.access span{
+  margin-bottom: 37px;
+}
+.access .access_flex2 .ddd{
+  margin-bottom: 47px;
+}
+.access .access_flex3 span{
+  width: 9.5%;
+}
+.bgi1{
+  padding-bottom: 50px;
+}
+/* フッター */
+.footer_btn ul li{
+  padding: 4px;
+}
+.pagetop{
+  padding-right: 5px;
+}
+  /* 客室 */
+  .room_list p{
+    width: calc(50% - 5px);
+  }
+  /* 温泉 */
+  .daiyokujoh, .model_flex, article .onsen_p{
+    flex-direction: column;
+  }
+  .modelp{
+    width: 100%;
+    padding-top: 20px;
+  }
+  .wrapper3 .model{
+    margin: 0 auto;
+  }
+  article .course{
+    margin: 0 auto;
+    width: 100%;
+  }
+  article .onsen_p{
+    flex-direction: column;
+  }
+  .onsen_p div{
+    width: 100%;
+  }
+  .onsen .quality{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 45px 45px 55px;
+  }
+
+  form input[type="date"]::before{
+    content: "日付";
+  }
+
+}

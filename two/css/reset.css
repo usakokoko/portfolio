@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*,*::before,*::after{
+	box-sizing: border-box;
+	/* width,heightの内側にpadding,borderを収めて表示する設定。cssの書き方を大きく変えてしまうため、付ける際は全称セレクタに記述するのが一般的。 */
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,figure,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+fieldset,img {
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+caption,th {
+	text-align:left;
+}
+
+img {
+	/* とりあえず自分の作品を作る際に真っ先に記述する。 */
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/*clearfix-------------------------------*/
+
+.clearfix:after {
+	content:"";
+	display:block;
+	clear:both;
+}
